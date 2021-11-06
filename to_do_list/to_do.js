@@ -2,7 +2,7 @@
 var submit = document.getElementById('submit');
 
 // add new list item when submitted 
-function addLi () {
+function addLi() {
     var input = document.getElementById('todo').value;
     var list = document.querySelector('#list');
     var newLi = document.createElement('li');
@@ -21,7 +21,7 @@ function addLi () {
 
 // remove list item when clicked
 const listItems = document.querySelectorAll('li');
-let listArray  =  Array.from(listItems);
+let listArray = Array.from(listItems);
 
 for (var i = 0; i < listArray.length; i++) {
     listItems[i].addEventListener('click', function() {
